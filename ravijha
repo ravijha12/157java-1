@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>Example12</title>
+	<style type="text/css">
+		#header{
+			background-color: rgb(249,137,211);
+			height: 100%;
+			width:100%;
+		}
+		#navigation{
+			background-color: rgb(49,70,0);
+			height: 100%;
+			width: 100%;
+		}
+		#leftdiv{
+			background-color: rgb(255, 146, 111);
+			height: 100%;
+			width: 100%;
+		}
+		#middlediv{
+			background-color:rgb(255, 25, 111); ;
+			height: 100%;
+			width: 100%;
+		}
+		#rightdiv{
+			background-color: rgb(49, 116, 176);
+			height: 100%;
+			width: 100%;
+		}
+		#footerdiv{
+			background-color: rgb(232, 0, 176);
+			height: 100%;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<table height="100%" width="100%" border="0px" cellspacing="0px" cellpadding="0px">
+		<tr style="height: 150px;">
+			<td colspan="3"><div id="header"><h1><center>Header</center></h1></div></td>
+		</tr>
+		<tr>
+			<td colspan="3" style="height: 50px;">
+				<div id="navigation">
+					<table>
+						<tr>
+							<td>
+								<a href="home.html">Home</a>
+								<a href="Student"></a>
+							</td>
+						</tr>
+				</table>
+				</div>
+			</td>
+		</tr>
+		<tr style="height: 700px;">
+			<td style="width: 200px;">
+				<div id="leftdiv">
+					<center><h1>leftdiv</h1></center>
+				</div>
+			</td>
+			<td>
+				<div id="middlediv">
+					<h1><center>middle div</center></h1>
+				</div>
+			</td>
+			<td style="width: 200px;">
+				<div id="rightdiv">
+					<h1><center>right div</center></h1>
+				</div>
+			</td>
+		
+		</tr>
+		<tr height="150px">
+			<td colspan="3"><div id="footerdiv"><center><h1>Footer</h1></center></div></td>
+		</tr>
+	</table>
+</body>
+</html>
