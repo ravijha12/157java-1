@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example3</title>
+	<style type="text/css">
+		table,td{
+			border:10px solid black;
+			color: red;
+			text-align: center;
+			border-spacing: 0px;
+		}
+		body{
+			background-color: cyan;
+		}
+		body#header_div{
+			background-color: red;
+		}
+	</style>
+</head>
+<body background="download.jpg">
+	<div id="header_div">
+		<center>
+			<h1>Javascript Example</h1>
+		</center>
+	</div>
+	<script type="text/javascript">
+		function fun(){
+			var name,email,address,phone;
+			name=f1.name.value;
+			email=f1.email.value;
+			address=f1.address.value;
+			phone=f1.phone.value;
+			if(name==""){
+				alert("Name is Empty");
+				f1.name.focus();
+			}else if(email == ""){
+				alert("Email is Empty");
+				f1.email.focus();
+			}else if(address==""){
+				alert("Address is Empty");
+				f1.address.focus();
+			}else if(phone==""){
+				alert("Phone number is Empty");
+				f1.phone.focus();
+			}else if(isNaN(phone)){
+				alert("Please Enter a number");
+				f1.phone.focus();
+			}else if(phone.length != 10){
+				alert("Please enter 10 digit number");
+				f1.phone.focus();
+			}else{
+				alert("Subbmitted successfuly");
+				f1.submit();
+			}
+		}
+	</script>
+	<center>
+		<form name="f1" method="get" action=second.jsp >
+			<table cellpadding="10px" cellspacing="0px" width="50%" height="50%">
+				<tr><td>Name:</td><td><input type="text" name="name" placeholder="Enter your name" size="40"/></td></tr>
+				<tr><td>Email</td><td><input type="email" name="email" placeholder="Enter your email"/ size="40"></td></tr>
+				<tr><td>Address</td><td><input type="address" name="address" placeholder="Enter your address" size="40"/></td></tr>
+				<tr><td>Phone</td><td><input type="Phone" name="phone" placeholder="Please enter your phone" size="40"></td></tr>
+				<tr><td colspan="2"><input type="button" value="submit" name="submit_button" onclick="fun()"></td></tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>

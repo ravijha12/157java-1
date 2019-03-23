@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example6</title>
+	<script type="text/javascript">
+		function validate(){
+			var email=document.getElementById("email").value;
+			var lastIndexOfDot = email.lastIndexOf(".");
+			var indexOfAtTheRate = email.indexOf("@");
+			var len = email.length;
+			if(len<6){
+				alert("Please provide proper email");
+				document.write(lastIndexOfDot);
+				document.write(indexOfAtTheRate);
+			}else if(!email.contains('@')){
+				alert("Please provide proper email");
+			}else if(!email.contains('.')){
+				alert("Please provide proper email");
+			}else if(!(email.length-lastIndexOfDot)>=2){
+				alert("please provide proper email");
+			}else if((email.length-indexOfAtTheRate)>=4){
+				alert("please provide proper email");
+			}else if(indexOfAtTheRate>lastIndexOfDot){
+				alert("Please provide proper email");
+			}
+			else{
+				f1.submit();
+				alert("Submitted successfully");
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<form id="f1" action="second.jsp" method="get">
+		<input type="text" name="email" id="email"/>
+		<input type="button" name="submit" value="submit" onclick="validate()">
+	</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example9</title>
+	<script type="text/javascript">
+		if(document.getElementById("button").innerHTML=="change"){
+			val_changer();
+		}else{
+			val_unchanger();
+		}
+		function val_changer(){
+			document.getElementById("demo").innerHTML="content changed";
+			document.getElementById("button").innerHTML="unchange";
+		}
+		function val_unchanger(){
+			document.getElementById("demo").innerHTML="change content";
+			document.getElementById("button").innerHTML="change";
+		}
+	</script>
+</head>
+<body>
+	<p id="demo">Change content</p>
+	<button onclick="val_changer()" id="button">change</button>
+</body>
+</html>
